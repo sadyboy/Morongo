@@ -91,26 +91,26 @@ class DataService: ObservableObject {
     private static func createDefaultMilestones() -> [Milestone] {
         return [
             Milestone(
-            id: UUID(),
-            title: "Novice Traveler",
-            description: "Walk 10 km",
-            type: .totalDistance,
-            threshold: 10,
-            reward: 100,
-            isAchieved: false,
-            achievedDate: nil
+                id: UUID(),
+                title: "Novice Traveler",
+                description: "Walk 10 km",
+                type: .totalDistance,
+                threshold: 10,
+                reward: 100,
+                isAchieved: false,
+                achievedDate: nil
             ),
             Milestone(
-            id: UUID(),
-            title: "Active Explorer",
-            description: "Spend 5 hours in activities",
-            type: .totalDuration,
-            threshold: 18000,
-            reward: 150,
-            isAchieved: false,
-            achievedDate: nil
+                id: UUID(),
+                title: "Active Explorer",
+                description: "Spend 5 hours in activities",
+                type: .totalDuration,
+                threshold: 18000,
+                reward: 150,
+                isAchieved: false,
+                achievedDate: nil
             )
-            ]
+        ]
     }
     
     // MARK: - Certificate Management
@@ -214,7 +214,7 @@ class DataService: ObservableObject {
                 bestSeason: "October - May",
                 imageNames: ["mountain_trail"],
                 rating: 4.8,
-                reviews: 245,
+                reviews: 245
             ),
             Adventure(
                 id: UUID(),
@@ -236,7 +236,7 @@ class DataService: ObservableObject {
                 bestSeason: "November - March",
                 imageNames: ["rock_climbing"],
                 rating: 4.6,
-                reviews: 178,
+                reviews: 178
             ),
             Adventure(
                 id: UUID(),
@@ -258,7 +258,7 @@ class DataService: ObservableObject {
                 bestSeason: "October - April",
                 imageNames: ["mountain_biking"],
                 rating: 4.7,
-                reviews: 156,
+                reviews: 156
             ),
             Adventure(
                 id: UUID(),
@@ -280,7 +280,7 @@ class DataService: ObservableObject {
                 bestSeason: "June - September",
                 imageNames: ["wakeboarding"],
                 rating: 4.5,
-                reviews: 203,
+                reviews: 203
             ),
             Adventure(
                 id: UUID(),
@@ -302,7 +302,7 @@ class DataService: ObservableObject {
                 bestSeason: "Year-round",
                 imageNames: ["parasailing"],
                 rating: 4.9,
-                reviews: 312,
+                reviews: 312
             ),
             Adventure(
                 id: UUID(),
@@ -324,8 +324,8 @@ class DataService: ObservableObject {
                 bestSeason: "October - April",
                 imageNames: ["bouldering"],
                 rating: 4.8,
-                reviews: 467,
-            ),
+                reviews: 467
+            )
         ]
     }
     private static func loadCourses() -> [Course] {
