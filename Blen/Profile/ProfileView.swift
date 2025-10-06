@@ -94,7 +94,7 @@ struct ProfileView: View {
         .photosPicker(isPresented: $showingImagePicker,
                       selection: $selectedPhoto,
                       matching: .images)
-        .onChange(of: selectedPhoto) { newValue in
+        .onChange(of: selectedPhoto) { oldValue, newValue in
             Task {
                 if let data = try? await newValue?.loadTransferable(type: Data.self),
                    let uiImage = UIImage(data: data) {

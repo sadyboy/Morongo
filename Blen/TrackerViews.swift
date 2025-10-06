@@ -278,7 +278,7 @@ struct TrackerView: View {
             }
         }
         .padding()
-        .background(Image(.otherBg)
+        .background(Image("otherBg")
             .resizable()
         )
         .cornerRadius(16)
@@ -343,7 +343,7 @@ struct TrackerView: View {
         .scrollContentBackground(.hidden)
         .padding()
         .background(
-            Image(.otherBg)
+            Image("otherBg")
                 .resizable()
         )
         .cornerRadius(16)
@@ -827,65 +827,3 @@ struct ChallengeRow: View {
     }
 }
 
-struct MapView: View {
-    let route: [SportActivity.LocationPoint]
-    
-    var body: some View {
-        Map(coordinateRegion: .constant(region), annotationItems: [route.first!, route.last!]) { point in
-            MapMarker(
-                coordinate: CLLocationCoordinate2D(
-                    latitude: point.latitude,
-                    longitude: point.longitude
-                ),
-                tint: point == route.first! ? .green : .red
-            )
-        }
-        .overlay(
-            routeOverlay
-        )
-    }
-    
-    private var region: MKCoordinateRegion {
-        let center = route[route.count / 2]
-        let span = calculateSpan()
-        return MKCoordinateRegion(
-            center: CLLocationCoordinate2D(
-                latitude: center.latitude,
-                longitude: center.longitude
-            ),
-            span: span
-        )
-    }
-    
-    private func calculateSpan() -> MKCoordinateSpan {
-        let latitudes = route.map { $0.latitude }
-        let longitudes = route.map { $0.longitude }
-        
-        let latDelta = (latitudes.max()! - latitudes.min()!) * 1.5
-        let lonDelta = (longitudes.max()! - longitudes.min()!) * 1.5
-        
-        return MKCoordinateSpan(
-            latitudeDelta: max(latDelta, 0.005),
-            longitudeDelta: max(lonDelta, 0.005)
-        )
-    }
-    
-    private var routeOverlay: some View {
-        GeometryReader { geometry in
-            Path { path in
-                let points = route.map { point in
-                    CGPoint(
-                        x: (point.longitude - region.center.longitude) / region.span.longitudeDelta * geometry.size.width + geometry.size.width / 2,
-                        y: (region.center.latitude - point.latitude) / region.span.latitudeDelta * geometry.size.height + geometry.size.height / 2
-                    )
-                }
-                
-                path.move(to: points[0])
-                for point in points.dropFirst() {
-                    path.addLine(to: point)
-                }
-            }
-            .stroke(Color.blue, lineWidth: 3)
-        }
-    }
-}

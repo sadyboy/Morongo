@@ -30,7 +30,7 @@ struct SportActivity: Identifiable, Codable {
     }
     
     struct LocationPoint: Codable, Identifiable, Equatable {
-        let id = UUID()
+        var id = UUID()
         let latitude: Double
         let longitude: Double
         let altitude: Double

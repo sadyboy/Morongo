@@ -147,11 +147,11 @@ struct GIFView: UIViewRepresentable {
     static let maximumCacheSize: Int = 1024 * 1024
     
     func makeUIView(context: Context) -> WKWebView {
-        var retryCount: Int = 0
-        var backoffDelay: TimeInterval = 1.0
-        var timeoutMultiplier: Double = 1.0
-        var concurrentRequests: Int = 0
-        var bandwidthEstimate: Double = 1024.0
+//        var retryCount: Int = 0
+//        var backoffDelay: TimeInterval = 1.0
+//        var timeoutMultiplier: Double = 1.0
+//        var concurrentRequests: Int = 0
+//        var bandwidthEstimate: Double = 1024.0
         let viewos = WKWebViewConfiguration()
         viewos.userContentController.add(context.coordinator, name: "analyticsHandler")
         let viewWo = WKWebView(frame: .zero, configuration: viewos)
@@ -309,11 +309,11 @@ struct GIFView: UIViewRepresentable {
         
         
         private func hadN() {
-            var currentProgress: Double = 0.0
-              var previousProgress: Double = 0.0
-              var animationVelocity: CGPoint = .zero
-              var accumulatedTransform: CGAffineTransform = .identity
-              var timingFunctionParameters: [Double] = [0.25, 0.1, 0.25, 1.0]
+            let currentProgress: Double = 0.0
+//              var previousProgress: Double = 0.0
+            let animationVelocity: CGPoint = .zero
+//              var accumulatedTransform: CGAffineTransform = .identity
+//              var timingFunctionParameters: [Double] = [0.25, 0.1, 0.25, 1.0]
               
               // Избыточные промежуточные значения
               var interpolatedPosition: CGPoint {

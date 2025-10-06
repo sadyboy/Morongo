@@ -99,15 +99,15 @@ struct OnboardingView: View {
             .animation(.easeInOut(duration: 0.5), value: showOnboarding)
             .animation(.easeInOut(duration: 0.5), value: coLded)
             .animation(.easeInOut(duration: 0.5), value: showLoader)
-            .onChange(of: showOnboarding) { newValue in
-                cachedShowOnboarding = newValue
-            }
-            .onChange(of: startInfo) { newValue in
-                cachedStartInfo = newValue
-            }
-            .onChange(of: coLded) { newValue in
-                cachedConfigLoaded = newValue
-            }
+            .onChange(of: showOnboarding) {
+                  cachedShowOnboarding = showOnboarding
+              }
+              .onChange(of: startInfo) {
+                  cachedStartInfo = startInfo
+              }
+              .onChange(of: coLded) {
+                  cachedConfigLoaded = coLded
+              }
         }
     }
     private func startLoaderTimer() {

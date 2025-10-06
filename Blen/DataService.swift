@@ -215,7 +215,6 @@ class DataService: ObservableObject {
                 imageNames: ["mountain_trail"],
                 rating: 4.8,
                 reviews: 245,
-//                price: "Free"
             ),
             Adventure(
                 id: UUID(),
@@ -238,7 +237,6 @@ class DataService: ObservableObject {
                 imageNames: ["rock_climbing"],
                 rating: 4.6,
                 reviews: 178,
-//                price: "$25 park fee"
             ),
             Adventure(
                 id: UUID(),
@@ -261,7 +259,6 @@ class DataService: ObservableObject {
                 imageNames: ["mountain_biking"],
                 rating: 4.7,
                 reviews: 156,
-//                price: "Free"
             ),
             Adventure(
                 id: UUID(),
@@ -284,7 +281,6 @@ class DataService: ObservableObject {
                 imageNames: ["wakeboarding"],
                 rating: 4.5,
                 reviews: 203,
-//                price: "$150/hour with instructor"
             ),
             Adventure(
                 id: UUID(),
@@ -307,7 +303,6 @@ class DataService: ObservableObject {
                 imageNames: ["parasailing"],
                 rating: 4.9,
                 reviews: 312,
-//                price: "free"
             ),
             Adventure(
                 id: UUID(),
@@ -330,8 +325,7 @@ class DataService: ObservableObject {
                 imageNames: ["bouldering"],
                 rating: 4.8,
                 reviews: 467,
-//                price: "$30 park entrance"
-            )
+            ),
         ]
     }
     private static func loadCourses() -> [Course] {

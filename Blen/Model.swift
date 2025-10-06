@@ -379,7 +379,7 @@ struct FilterChip: View {
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 8)
-            .background(isSelected ? Color(color) : Color.white)
+            .background(isSelected ? Color("\(color)") : Color.white)
             .foregroundColor(isSelected ? .white : .primary)
             .cornerRadius(20)
         

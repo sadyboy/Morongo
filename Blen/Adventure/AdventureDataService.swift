@@ -138,7 +138,7 @@ class AdventureDataService {
                 imageNames: ["bouldering"],
                 rating: 4.8,
                 reviews: 467,
-            )
+            ),
         ]
     }
     
