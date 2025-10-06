@@ -71,7 +71,7 @@ class AdventureDataService {
                 bestSeason: "October - April",
                 imageNames: ["mountain_biking"],
                 rating: 4.7,
-                reviews: 156,
+                reviews: 156
             ),
             Adventure(
                 id: UUID(),
@@ -93,7 +93,7 @@ class AdventureDataService {
                 bestSeason: "June - September",
                 imageNames: ["wakeboarding"],
                 rating: 4.5,
-                reviews: 203,
+                reviews: 203
             ),
             Adventure(
                 id: UUID(),
@@ -115,7 +115,7 @@ class AdventureDataService {
                 bestSeason: "Year-round",
                 imageNames: ["parasailing"],
                 rating: 4.9,
-                reviews: 312,
+                reviews: 312
             ),
             Adventure(
                 id: UUID(),
@@ -137,8 +137,8 @@ class AdventureDataService {
                 bestSeason: "October - April",
                 imageNames: ["bouldering"],
                 rating: 4.8,
-                reviews: 467,
-            ),
+                reviews: 467
+            )
         ]
     }
     
