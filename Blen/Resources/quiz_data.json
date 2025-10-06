@@ -1,0 +1,1972 @@
+{
+  "categories": {
+    "safetyBasics": {
+      "name": "Safety Basics",
+      "description": "Essential safety knowledge for outdoor activities",
+      "questions": [
+        {
+          "id": "safety_1",
+          "text": "What is the most important safety rule in outdoor activities?",
+          "options": [
+            "Always tell someone your plans",
+            "Carry expensive equipment",
+            "Take lots of photos",
+            "Go alone for peace"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Always inform someone about your plans and expected return time for safety."
+        },
+        {
+          "id": "safety_2",
+          "text": "What should you do if you get lost?",
+          "options": [
+            "Panic and run",
+            "Stay calm and stay put",
+            "Keep walking randomly",
+            "Yell continuously"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Staying in one place makes you easier to find and conserves energy."
+        },
+        {
+          "id": "safety_3",
+          "text": "Why is checking weather forecast important?",
+          "options": [
+            "To plan activities",
+            "To avoid dangerous conditions",
+            "Both planning and safety",
+            "It's not important"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Weather forecasts help plan activities and avoid dangerous conditions."
+        },
+        {
+          "id": "safety_4",
+          "text": "What is the emergency signal for help?",
+          "options": [
+            "Three consecutive signals",
+            "One loud shout",
+            "Continuous noise",
+            "Random signals"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Three of anything (whistles, shouts, fires) is the universal distress signal."
+        },
+        {
+          "id": "safety_5",
+          "text": "When should you turn back during a hike?",
+          "options": [
+            "When tired",
+            "When weather deteriorates or time runs short",
+            "Only in emergencies",
+            "Never turn back"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Turning back when conditions worsen is safer than pushing forward."
+        },
+        {
+          "id": "safety_6",
+          "text": "What is the purpose of a trailhead register?",
+          "options": [
+            "For statistics",
+            "Safety record of your trip",
+            "Payment collection",
+            "Tourist information"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Registers provide a safety record of who is on the trail."
+        },
+        {
+          "id": "safety_7",
+          "text": "How often should you drink water while hiking?",
+          "options": [
+            "Only when thirsty",
+            "Every 15-20 minutes",
+            "Once per hour",
+            "At the end only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Regular hydration prevents dehydration before you feel thirsty."
+        },
+        {
+          "id": "safety_8",
+          "text": "What should you do before crossing a stream?",
+          "options": [
+            "Jump across quickly",
+            "Assess depth and current first",
+            "Follow others blindly",
+            "Remove shoes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Always assess water conditions before attempting to cross."
+        },
+        {
+          "id": "safety_9",
+          "text": "Why carry a first aid kit?",
+          "options": [
+            "It's required",
+            "For minor injuries and emergencies",
+            "For decoration",
+            "Only for major accidents"
+          ],
+          "correctAnswer": 1,
+          "explanation": "First aid kits address both minor injuries and emergency situations."
+        },
+        {
+          "id": "safety_10",
+          "text": "What is hiking etiquette when meeting others?",
+          "options": [
+            "Ignore them",
+            "Uphill hikers have right of way",
+            "Downhill hikers have right of way",
+            "Whoever is faster"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Uphill hikers have right of way as stopping disrupts their rhythm."
+        },
+        {
+          "id": "safety_11",
+          "text": "When is the safest time to hike in thunderstorm areas?",
+          "options": [
+            "Early morning",
+            "Midday",
+            "Late afternoon",
+            "Evening"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Early morning hiking avoids afternoon thunderstorms common in many areas."
+        },
+        {
+          "id": "safety_12",
+          "text": "What should you do with your trash?",
+          "options": [
+            "Bury it",
+            "Pack it out",
+            "Burn it",
+            "Leave it scattered"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Leave no trace principles require packing out all trash."
+        },
+        {
+          "id": "safety_13",
+          "text": "How to prevent blisters?",
+          "options": [
+            "Wear new boots",
+            "Proper footwear and moisture management",
+            "Walk barefoot",
+            "Ignore small hot spots"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Proper boots and managing moisture prevents blister formation."
+        },
+        {
+          "id": "safety_14",
+          "text": "What is the rule for sunset timing?",
+          "options": [
+            "Start heading back at sunset",
+            "Be back before sunset",
+            "Hike at night with lights",
+            "Sunset doesn't matter"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Always plan to finish your hike well before sunset."
+        },
+        {
+          "id": "safety_15",
+          "text": "Why carry a map and compass with GPS?",
+          "options": [
+            "As backup",
+            "Batteries can fail",
+            "Both backup and skill practice",
+            "GPS is enough"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Traditional navigation serves as backup and maintains important skills."
+        },
+        {
+          "id": "safety_16",
+          "text": "What to do if you encounter wildlife?",
+          "options": [
+            "Run away",
+            "Approach closely",
+            "Observe from distance",
+            "Feed them"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Always observe wildlife from a safe, respectful distance."
+        },
+        {
+          "id": "safety_17",
+          "text": "How to check if water is safe to drink?",
+          "options": [
+            "If it looks clear",
+            "Always treat water",
+            "Taste test",
+            "If flowing fast"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Always treat or filter water from natural sources."
+        },
+        {
+          "id": "safety_18",
+          "text": "What is hypothermia?",
+          "options": [
+            "Being too hot",
+            "Dangerously low body temperature",
+            "Dehydration",
+            "Altitude sickness"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Hypothermia occurs when body temperature drops dangerously low."
+        },
+        {
+          "id": "safety_19",
+          "text": "When to use emergency shelter?",
+          "options": [
+            "Only at night",
+            "When weather turns dangerous",
+            "For lunch breaks",
+            "Never need shelter"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Use emergency shelter whenever conditions become dangerous."
+        },
+        {
+          "id": "safety_20",
+          "text": "What is the purpose of a hiking partner?",
+          "options": [
+            "For conversation",
+            "Safety and assistance",
+            "To carry more gear",
+            "Optional luxury"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Hiking partners provide safety through mutual assistance and emergency help."
+        }
+      ]
+    },
+    "equipmentKnowledge": {
+      "name": "Equipment Knowledge",
+      "description": "Understanding and using outdoor equipment effectively",
+      "questions": [
+        {
+          "id": "equip_1",
+          "text": "What is the most essential piece of hiking equipment?",
+          "options": [
+            "Expensive boots",
+            "Proper footwear and navigation tools",
+            "GPS device",
+            "Camera"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Proper footwear and basic navigation tools are fundamental for safe hiking."
+        },
+        {
+          "id": "equip_2",
+          "text": "Why are hiking boots important?",
+          "options": [
+            "Fashion",
+            "Ankle support and traction",
+            "Waterproof only",
+            "Light weight"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Boots provide essential ankle support and traction on uneven terrain."
+        },
+        {
+          "id": "equip_3",
+          "text": "What should a daypack contain?",
+          "options": [
+            "Only water",
+            "Water, food, first aid, rain gear",
+            "Extra clothes only",
+            "Entertainment"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Daypacks should carry essential safety and comfort items."
+        },
+        {
+          "id": "equip_4",
+          "text": "How to choose a backpack size?",
+          "options": [
+            "Largest available",
+            "Based on trip duration and gear",
+            "Smallest possible",
+            "One size fits all"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Backpack size should match trip length and required equipment."
+        },
+        {
+          "id": "equip_5",
+          "text": "What is layering clothing system?",
+          "options": [
+            "Wearing multiple shirts",
+            "Base, insulation, and shell layers",
+            "Thick clothing",
+            "Fashion layers"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Layering system manages temperature and moisture effectively."
+        },
+        {
+          "id": "equip_6",
+          "text": "Why carry a headlamp?",
+          "options": [
+            "Night hiking",
+            "Emergency and unexpected delays",
+            "Cave exploration",
+            "Signaling only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Headlamps are essential for emergencies and unexpected night travel."
+        },
+        {
+          "id": "equip_7",
+          "text": "What is the ten essentials list?",
+          "options": [
+            "Luxury items",
+            "Basic survival and safety items",
+            "Advanced gear",
+            "Optional equipment"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Ten essentials are fundamental safety and survival items."
+        },
+        {
+          "id": "equip_8",
+          "text": "How to test equipment before trip?",
+          "options": [
+            "Assume it works",
+            "Set up and use at home first",
+            "Quick visual check",
+            "Test on trail"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Always test unfamiliar equipment in controlled conditions first."
+        },
+        {
+          "id": "equip_9",
+          "text": "What is the purpose of trekking poles?",
+          "options": [
+            "Weapons",
+            "Balance, reduce joint impact, and stability",
+            "Fashion accessory",
+            "Measuring tool"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Trekking poles improve balance and reduce lower body strain."
+        },
+        {
+          "id": "equip_10",
+          "text": "How to pack a backpack correctly?",
+          "options": [
+            "Random placement",
+            "Heavy items close to back, balanced load",
+            "All heavy on top",
+            "Everything at bottom"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Proper packing places weight optimally for comfort and balance."
+        },
+        {
+          "id": "equip_11",
+          "text": "What are quick-dry clothes for?",
+          "options": [
+            "Fashion",
+            "Moisture management and hypothermia prevention",
+            "Hot weather only",
+            "Swimming"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Quick-dry fabrics manage moisture to prevent hypothermia."
+        },
+        {
+          "id": "equip_12",
+          "text": "Why carry a whistle?",
+          "options": [
+            "Sport events",
+            "Emergency signaling",
+            "Animal scaring",
+            "Communication"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Whistles provide effective long-distance emergency signaling."
+        },
+        {
+          "id": "equip_13",
+          "text": "What is the purpose of gaiters?",
+          "options": [
+            "Fashion",
+            "Keep debris and water out of boots",
+            "Knee protection",
+            "Snake protection"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Gaiters protect boots from debris and water entry."
+        },
+        {
+          "id": "equip_14",
+          "text": "How to choose sleeping bag temperature rating?",
+          "options": [
+            "Always coldest rating",
+            "Based on expected conditions with margin",
+            "Room temperature",
+            "Average temperature"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Choose sleeping bags rated for temperatures colder than expected."
+        },
+        {
+          "id": "equip_15",
+          "text": "What is the function of a rain cover?",
+          "options": [
+            "Sun protection",
+            "Keep backpack contents dry",
+            "Camouflage",
+            "Weight reduction"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Rain covers protect backpack contents from water damage."
+        },
+        {
+          "id": "equip_16",
+          "text": "Why use water purification?",
+          "options": [
+            "Better taste",
+            "Prevent waterborne illnesses",
+            "Clear water",
+            "Optional for streams"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Water purification prevents dangerous waterborne pathogens."
+        },
+        {
+          "id": "equip_17",
+          "text": "What are the types of stoves?",
+          "options": [
+            "All same",
+            "Canister, liquid fuel, wood burning",
+            "Electric and gas",
+            "Only propane"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Different stove types suit different conditions and fuels."
+        },
+        {
+          "id": "equip_18",
+          "text": "How to maintain hiking boots?",
+          "options": [
+            "Never clean",
+            "Clean, dry, and waterproof regularly",
+            "Replace when worn",
+            "Only when visible damage"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Regular maintenance extends boot life and performance."
+        },
+        {
+          "id": "equip_19",
+          "text": "What is the purpose of a compass?",
+          "options": [
+            "Decoration",
+            "Navigation when electronics fail",
+            "Map accessory",
+            "Measuring distance"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Compass provides reliable navigation without batteries."
+        },
+        {
+          "id": "equip_20",
+          "text": "Why carry a multi-tool?",
+          "options": [
+            "Weight",
+            "Versatile repairs and adjustments",
+            "Weapon",
+            "Food preparation only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Multi-tools handle various equipment repairs and adjustments."
+        }
+      ]
+    },
+    "navigationSkills": {
+      "name": "Navigation Skills",
+      "description": "Mastering map reading, compass use, and route finding",
+      "questions": [
+        {
+          "id": "nav_1",
+          "text": "What does a topographic map show?",
+          "options": [
+            "Only roads",
+            "Terrain elevation and features",
+            "Only cities",
+            "Weather patterns"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Topographic maps display terrain elevation, contours, and natural features."
+        },
+        {
+          "id": "nav_2",
+          "text": "What is a contour line?",
+          "options": [
+            "Road boundary",
+            "Line connecting points of equal elevation",
+            "Water flow",
+            "Trail marker"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Contour lines connect points at the same elevation above sea level."
+        },
+        {
+          "id": "nav_3",
+          "text": "How to hold a compass correctly?",
+          "options": [
+            "Any direction",
+            "Level and away from metal",
+            "Close to body",
+            "Upside down"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Compass must be level and away from metal objects for accurate reading."
+        },
+        {
+          "id": "nav_4",
+          "text": "What does the red compass needle point to?",
+          "options": [
+            "South",
+            "Magnetic north",
+            "True north",
+            "Your destination"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The red compass needle points to magnetic north."
+        },
+        {
+          "id": "nav_5",
+          "text": "How to orient a map?",
+          "options": [
+            "North at top",
+            "Align map with actual terrain",
+            "Facing south",
+            "Random direction"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Orienting means aligning the map with the actual landscape."
+        },
+        {
+          "id": "nav_6",
+          "text": "What is a map scale?",
+          "options": [
+            "Weight measurement",
+            "Ratio between map and actual distance",
+            "Color key",
+            "Mountain height"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Scale shows how map distances relate to actual ground distances."
+        },
+        {
+          "id": "nav_7",
+          "text": "How to measure distance on a map?",
+          "options": [
+            "Guess",
+            "Use scale and ruler",
+            "Steps counting",
+            "Time estimation"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Use the map's scale with a ruler to measure distances accurately."
+        },
+        {
+          "id": "nav_8",
+          "text": "What are map symbols?",
+          "options": [
+            "Decorations",
+            "Representations of features",
+            "Secret codes",
+            "Historical marks"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Symbols represent natural and man-made features on maps."
+        },
+        {
+          "id": "nav_9",
+          "text": "How to find your location on a map?",
+          "options": [
+            "Guess",
+            "Identify surrounding features",
+            "GPS only",
+            "Ask others"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Identify visible landmarks and match them to the map."
+        },
+        {
+          "id": "nav_10",
+          "text": "What is a bearing?",
+          "options": [
+            "Compass weight",
+            "Direction from one point to another",
+            "Mountain name",
+            "Distance measure"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A bearing is the direction from your position to a target."
+        },
+        {
+          "id": "nav_11",
+          "text": "How to follow a compass bearing?",
+          "options": [
+            "Walk straight",
+            "Sight distant object and walk to it",
+            "Follow needle",
+            "Random direction"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Pick a distant object on your bearing line and walk toward it."
+        },
+        {
+          "id": "nav_12",
+          "text": "What is declination?",
+          "options": [
+            "Compass error",
+            "Difference between true and magnetic north",
+            "Map damage",
+            "Needle stuck"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Declination is the angle between true north and magnetic north."
+        },
+        {
+          "id": "nav_13",
+          "text": "How to read contour intervals?",
+          "options": [
+            "Color shades",
+            "Elevation difference between lines",
+            "Line thickness",
+            "Map scale"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Contour interval is the vertical distance between contour lines."
+        },
+        {
+          "id": "nav_14",
+          "text": "What does close contour lines indicate?",
+          "options": [
+            "Flat area",
+            "Steep slope",
+            "Water source",
+            "Forest area"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Closely spaced contours indicate steep terrain."
+        },
+        {
+          "id": "nav_15",
+          "text": "How to identify a valley on a map?",
+          "options": [
+            "Straight lines",
+            "V-shaped contours pointing uphill",
+            "Circle patterns",
+            "Blue lines"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Valleys show as V-shaped contours pointing toward higher ground."
+        },
+        {
+          "id": "nav_16",
+          "text": "What is a ridge?",
+          "options": [
+            "Water flow",
+            "Elevated terrain with slopes on both sides",
+            "Flat area",
+            "River bank"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A ridge is a long, narrow elevation with slopes descending on both sides."
+        },
+        {
+          "id": "nav_17",
+          "text": "How to use a map with GPS?",
+          "options": [
+            "GPS replaces map",
+            "Map verifies GPS and provides context",
+            "Ignore map",
+            "Use separately"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Maps provide context and verification for GPS information."
+        },
+        {
+          "id": "nav_18",
+          "text": "What is pace counting?",
+          "options": [
+            "Walking speed",
+            "Measuring distance by counting steps",
+            "Time measurement",
+            "Rest counting"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Pace counting estimates distance traveled by counting steps."
+        },
+        {
+          "id": "nav_19",
+          "text": "How to navigate in poor visibility?",
+          "options": [
+            "Wait for clearance",
+            "Use compass and careful dead reckoning",
+            "Follow animal trails",
+            "Random walking"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Compass and dead reckoning are essential in poor visibility."
+        },
+        {
+          "id": "nav_20",
+          "text": "What is the purpose of a map legend?",
+          "options": [
+            "Story",
+            "Explains symbols and colors",
+            "Historical information",
+            "Author name"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The legend explains what the map symbols and colors represent."
+        }
+      ]
+    },
+    "survivalSkills": {
+      "name": "Survival Skills",
+      "description": "Wilderness survival techniques and emergency procedures",
+      "questions": [
+        {
+          "id": "surv_1",
+          "text": "What is the rule of threes for survival?",
+          "options": [
+            "Three attempts",
+            "3 minutes air, 3 hours shelter, 3 days water, 3 weeks food",
+            "Three people",
+            "Three tools"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Rule of threes prioritizes survival needs: air, shelter, water, food."
+        },
+        {
+          "id": "surv_2",
+          "text": "What is the first priority in survival situation?",
+          "options": [
+            "Food",
+            "Shelter and protection",
+            "Water",
+            "Fire"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Shelter protects from environmental threats and conserves energy."
+        },
+        {
+          "id": "surv_3",
+          "text": "How to signal for help in wilderness?",
+          "options": [
+            "Yell",
+            "Three of anything: signals, fires, sounds",
+            "Wave arms",
+            "Run"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Three consecutive signals is the universal distress pattern."
+        },
+        {
+          "id": "surv_4",
+          "text": "What is the safest water source in wilderness?",
+          "options": [
+            "Standing water",
+            "Flowing water from springs or streams",
+            "Rainwater",
+            "Snow"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Flowing water is generally safer than stagnant sources."
+        },
+        {
+          "id": "surv_5",
+          "text": "How to build emergency shelter?",
+          "options": [
+            "Complex structure",
+            "Simple structure using available materials",
+            "Dig hole",
+            "No shelter needed"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Emergency shelters should be simple, quick, and use local materials."
+        },
+        {
+          "id": "surv_6",
+          "text": "What is the purpose of survival kit?",
+          "options": [
+            "Weight",
+            "Essential tools for emergency survival",
+            "First aid only",
+            "Food storage"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Survival kits contain essential tools for emergency situations."
+        },
+        {
+          "id": "surv_7",
+          "text": "How to start fire without matches?",
+          "options": [
+            "Impossible",
+            "Friction, sparks, or magnification methods",
+            "Chemical reaction",
+            "Electricity"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Primitive fire starting uses friction, sparks, or solar magnification."
+        },
+        {
+          "id": "surv_8",
+          "text": "What are edible plant identification rules?",
+          "options": [
+            "Eat anything green",
+            "Universal edibility test and positive identification",
+            "Taste test",
+            "Animal observation"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Always positively identify plants before consumption using reliable methods."
+        },
+        {
+          "id": "surv_9",
+          "text": "How to stay warm in cold conditions?",
+          "options": [
+            "Exercise vigorously",
+            "Insulation and preventing heat loss",
+            "Remove wet clothes",
+            "Drink alcohol"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Heat conservation through insulation is more efficient than heat generation."
+        },
+        {
+          "id": "surv_10",
+          "text": "What is hypothermia prevention?",
+          "options": [
+            "Cold tolerance",
+            "Staying dry and maintaining core temperature",
+            "Thick clothing",
+            "Avoiding wind"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Hypothermia prevention focuses on staying dry and maintaining body heat."
+        },
+        {
+          "id": "surv_11",
+          "text": "How to find water in dry areas?",
+          "options": [
+            "Dig randomly",
+            "Follow animal tracks or vegetation patterns",
+            "Wait for rain",
+            "Collect dew"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Animals and vegetation often indicate water sources in arid regions."
+        },
+        {
+          "id": "surv_12",
+          "text": "What is the survival mindset?",
+          "options": [
+            "Panic",
+            "Calm, focused problem-solving",
+            "Hope for rescue",
+            "Anger"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Survival requires calm, rational thinking and continuous problem-solving."
+        },
+        {
+          "id": "surv_13",
+          "text": "How to purify water without equipment?",
+          "options": [
+            "Drink directly",
+            "Boiling or solar disinfection",
+            "Straining only",
+            "Chemical treatment"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Boiling is the most reliable primitive water purification method."
+        },
+        {
+          "id": "surv_14",
+          "text": "What is the purpose of emergency signaling?",
+          "options": [
+            "Communication",
+            "Increasing chances of detection and rescue",
+            "Entertainment",
+            "Time passing"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Effective signaling dramatically increases rescue probability."
+        },
+        {
+          "id": "surv_15",
+          "text": "How to navigate without compass?",
+          "options": [
+            "Guess direction",
+            "Using sun, stars, or natural indicators",
+            "Follow streams",
+            "Wait for rescue"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Natural navigation uses celestial bodies and environmental clues."
+        },
+        {
+          "id": "surv_16",
+          "text": "What are basic first aid priorities?",
+          "options": [
+            "All injuries equally",
+            "Airway, breathing, circulation, bleeding",
+            "Pain relief",
+            "Fracture stabilization"
+          ],
+          "correctAnswer": 1,
+          "explanation": "ABCs (Airway, Breathing, Circulation) are primary first aid priorities."
+        },
+        {
+          "id": "surv_17",
+          "text": "How to conserve energy in survival?",
+          "options": [
+            "Sleep constantly",
+            "Efficient movement and task prioritization",
+            "Minimal activity",
+            "High energy food"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Energy conservation through efficient actions extends survival time."
+        },
+        {
+          "id": "surv_18",
+          "text": "What is the shelter location criteria?",
+          "options": [
+            "Any flat spot",
+            "Protected from elements with resources nearby",
+            "High visibility",
+            "Near water only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Good shelter sites offer protection and access to resources."
+        },
+        {
+          "id": "surv_19",
+          "text": "How to maintain morale in survival?",
+          "options": [
+            "Hope only",
+            "Positive attitude, routine, and small goals",
+            "Ignore situation",
+            "Rest constantly"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Mental resilience through routine and goals improves survival chances."
+        },
+        {
+          "id": "surv_20",
+          "text": "What is the purpose of survival planning?",
+          "options": [
+            "Theoretical exercise",
+            "Preparedness for potential emergencies",
+            "Equipment collection",
+            "Risk avoidance"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Survival planning prepares you mentally and physically for emergencies."
+        }
+      ]
+    },
+    "firstAid": {
+      "name": "First Aid",
+      "description": "Emergency medical response and injury treatment",
+      "questions": [
+        {
+          "id": "firstaid_1",
+          "text": "What is the first step in any first aid situation?",
+          "options": [
+            "Start treatment",
+            "Ensure scene safety",
+            "Call for help",
+            "Check breathing"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Always ensure the scene is safe before approaching any victim."
+        },
+        {
+          "id": "firstaid_2",
+          "text": "How to check if a person is conscious?",
+          "options": [
+            "Shake violently",
+            "Tap and shout 'Are you okay?'",
+            "Pour water",
+            "Pinch hard"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Gently tap and shout to check responsiveness without causing injury."
+        },
+        {
+          "id": "firstaid_3",
+          "text": "What is the recovery position for?",
+          "options": [
+            "Sleeping",
+            "Maintaining airway in unconscious breathing victims",
+            "Spinal injuries",
+            "Shock treatment"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Recovery position keeps airway open and prevents choking."
+        },
+        {
+          "id": "firstaid_4",
+          "text": "How to control severe bleeding?",
+          "options": [
+            "Tourniquet first",
+            "Direct pressure with clean cloth",
+            "Elevation only",
+            "Ice application"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Direct pressure is the first and most effective method for bleeding control."
+        },
+        {
+          "id": "firstaid_5",
+          "text": "What are the signs of shock?",
+          "options": [
+            "Yelling",
+            "Pale skin, rapid pulse, confusion",
+            "High blood pressure",
+            "Red skin"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Shock signs include pale skin, rapid pulse, and altered mental state."
+        },
+        {
+          "id": "firstaid_6",
+          "text": "How to treat a burn?",
+          "options": [
+            "Butter application",
+            "Cool running water for 10-20 minutes",
+            "Ice directly",
+            "Cover immediately"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cool running water stops the burning process and reduces pain."
+        },
+        {
+          "id": "firstaid_7",
+          "text": "What is CPR for?",
+          "options": [
+            "Heart attack",
+            "Cardiac arrest when no breathing",
+            "Any emergency",
+            "Choking"
+          ],
+          "correctAnswer": 1,
+          "explanation": "CPR maintains blood flow when heart has stopped beating."
+        },
+        {
+          "id": "firstaid_8",
+          "text": "How to treat a sprain?",
+          "options": [
+            "Heat immediately",
+            "RICE: Rest, Ice, Compression, Elevation",
+            "Continue activity",
+            "Massage vigorously"
+          ],
+          "correctAnswer": 1,
+          "explanation": "RICE method reduces swelling and promotes healing."
+        },
+        {
+          "id": "firstaid_9",
+          "text": "What is the universal choking sign?",
+          "options": [
+            "Yelling",
+            "Hands clutching throat",
+            "Coughing",
+            "Pointing at mouth"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Clutching the throat is the universal sign of choking."
+        },
+        {
+          "id": "firstaid_10",
+          "text": "How to treat hypothermia?",
+          "options": [
+            "Hot bath immediately",
+            "Gradual warming and dry clothing",
+            "Alcohol consumption",
+            "Vigorous exercise"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Gradual warming prevents dangerous after-drop in core temperature."
+        },
+        {
+          "id": "firstaid_11",
+          "text": "What are the ABCs of first aid?",
+          "options": [
+            "Alphabet",
+            "Airway, Breathing, Circulation",
+            "Ambulance, Breathing, Care",
+            "Assessment, Bleeding, Circulation"
+          ],
+          "correctAnswer": 1,
+          "explanation": "ABCs prioritize airway, breathing, and circulation assessment."
+        },
+        {
+          "id": "firstaid_12",
+          "text": "How to treat heat exhaustion?",
+          "options": [
+            "Continue activity",
+            "Cool rest and hydration",
+            "Hot drinks",
+            "Salt tablets"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cool rest and fluid replacement treat heat exhaustion effectively."
+        },
+        {
+          "id": "firstaid_13",
+          "text": "What is anaphylaxis?",
+          "options": [
+            "Minor allergy",
+            "Severe life-threatening allergic reaction",
+            "Skin rash",
+            "Food intolerance"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Anaphylaxis is a severe allergic reaction requiring immediate treatment."
+        },
+        {
+          "id": "firstaid_14",
+          "text": "How to remove a splinter?",
+          "options": [
+            "Push through",
+            "Clean tweezers and gentle pull",
+            "Knife cut",
+            "Ignore it"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Clean tweezers remove splinters safely without infection risk."
+        },
+        {
+          "id": "firstaid_15",
+          "text": "What is the purpose of a tourniquet?",
+          "options": [
+            "First choice for bleeding",
+            "Last resort for life-threatening limb bleeding",
+            "Any bleeding",
+            "Head wounds"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tourniquets are for life-threatening bleeding when direct pressure fails."
+        },
+        {
+          "id": "firstaid_16",
+          "text": "How to treat a nosebleed?",
+          "options": [
+            "Head back",
+            "Lean forward and pinch nostrils",
+            "Lie down",
+            "Cold compress on nose"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Leaning forward prevents blood from draining into throat."
+        },
+        {
+          "id": "firstaid_17",
+          "text": "What are diabetes emergency signs?",
+          "options": [
+            "Only high blood sugar",
+            "Confusion, sweating, or unconsciousness",
+            "Weight gain",
+            "Thirst only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Diabetes emergencies can involve high or low blood sugar symptoms."
+        },
+        {
+          "id": "firstaid_18",
+          "text": "How to treat a snake bite?",
+          "options": [
+            "Cut and suck",
+            "Keep calm and immobilized",
+            "Ice application",
+            "Tourniquet immediately"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Immobilization slows venom spread; cutting and sucking are harmful."
+        },
+        {
+          "id": "firstaid_19",
+          "text": "What is the purpose of an AED?",
+          "options": [
+            "Breathing assistance",
+            "Restarting heart in cardiac arrest",
+            "Pain relief",
+            "Bleeding control"
+          ],
+          "correctAnswer": 1,
+          "explanation": "AEDs analyze heart rhythm and deliver shock if needed."
+        },
+        {
+          "id": "firstaid_20",
+          "text": "How to treat a concussion?",
+          "options": [
+            "Keep awake",
+            "Rest and medical evaluation",
+            "Physical activity",
+            "Coffee consumption"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Concussion requires rest and professional medical assessment."
+        }
+      ]
+    },
+    "environmentalAwareness": {
+      "name": "Environmental Awareness",
+      "description": "Understanding and minimizing impact on the natural environment",
+      "questions": [
+        {
+          "id": "env_1",
+          "text": "What is the core principle of Leave No Trace?",
+          "options": [
+            "Leave campsite cleaner than you found it",
+            "Dispose of waste in rivers",
+            "Take souvenirs from nature",
+            "Minimize social interaction"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Leave No Trace means to leave the environment undisturbed and pristine for others."
+        },
+        {
+          "id": "env_2",
+          "text": "How far should you camp from water sources?",
+          "options": [
+            "As close as possible for convenience",
+            "At least 60 meters (200 feet)",
+            "Exactly 10 meters",
+            "Distance doesn't matter"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Camping 60+ meters away protects water quality and allows wildlife access."
+        },
+        {
+          "id": "env_3",
+          "text": "What is the proper way to wash dishes outdoors?",
+          "options": [
+            "Scatter soapy water widely",
+            "Use biodegradable soap in a stream",
+            "Wash and rinse 60+ meters from water, strain and scatter waste water",
+            "Bury dirty dishwater"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Carry water away from sources, use minimal soap, and scatter filtered waste water."
+        },
+        {
+          "id": "env_4",
+          "text": "How to minimize campfire impact?",
+          "options": [
+            "Build large fires for visibility",
+            "Use existing fire rings, keep fires small, burn all wood to ash",
+            "Build new fire rings at each campsite",
+            "Use green wood for longer burns"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Use established rings, small sizes, and only downed wood to reduce scarring."
+        },
+        {
+          "id": "env_5",
+          "text": "What should you do with food waste?",
+          "options": [
+            "Bury it near camp",
+            "Burn it in the fire",
+            "Pack it out with your trash",
+            "Feed it to wildlife"
+          ],
+          "correctAnswer": 2,
+          "explanation": "All food waste, including peels, must be packed out to avoid attracting animals and altering their behavior."
+        },
+        {
+          "id": "env_6",
+          "text": "Why should you stay on designated trails?",
+          "options": [
+            "It's easier walking",
+            "Prevents soil erosion and protects vegetation",
+            "Only for navigation",
+            "Trails are more scenic"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Staying on trails prevents soil erosion and protects fragile plant life from damage."
+        },
+        {
+          "id": "env_7",
+          "text": "What is the proper way to dispose of human waste?",
+          "options": [
+            "Bury it anywhere",
+            "Cat hole 15-20 cm deep, 60+ meters from water",
+            "Leave it on surface",
+            "Burn it"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Proper burial depth and distance from water prevents contamination and decomposition issues."
+        },
+        {
+          "id": "env_8",
+          "text": "How to respect wildlife while hiking?",
+          "options": [
+            "Feed them for photos",
+            "Observe from distance, don't feed, store food securely",
+            "Make noise to scare them away",
+            "Approach closely for better view"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Respecting wildlife means observing from distance and not altering their natural behavior."
+        },
+        {
+          "id": "env_9",
+          "text": "What does 'pack it in, pack it out' mean?",
+          "options": [
+            "Only pack heavy items",
+            "Everything you bring in, you must take out",
+            "Pack quickly",
+            "Share equipment with others"
+          ],
+          "correctAnswer": 1,
+          "explanation": "This principle means you are responsible for removing all your waste and belongings."
+        },
+        {
+          "id": "env_10",
+          "text": "Why avoid using soap in natural water sources?",
+          "options": [
+            "Soap doesn't work in cold water",
+            "It harms aquatic life and contaminates drinking water",
+            "Soap is too heavy to carry",
+            "Water cleans without soap"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Even biodegradable soap can harm aquatic ecosystems and contaminate water sources."
+        },
+        {
+          "id": "env_11",
+          "text": "What is the impact of cutting live trees for firewood?",
+          "options": [
+            "No impact - trees grow back",
+            "Damages ecosystem and habitat",
+            "Makes better firewood",
+            "Clears space for camping"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cutting live trees damages forest ecosystem and removes wildlife habitat."
+        },
+        {
+          "id": "env_12",
+          "text": "How to minimize noise pollution in nature?",
+          "options": [
+            "Use loud speakers for music",
+            "Keep voices low and avoid loud noises",
+            "Make noise to scare animals",
+            "Yell to communicate over distance"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Quiet enjoyment allows wildlife to behave naturally and other visitors to experience peace."
+        },
+        {
+          "id": "env_13",
+          "text": "What is the purpose of established campsites?",
+          "options": [
+            "They are more comfortable",
+            "Concentrate impact to protect surrounding area",
+            "They have better views",
+            "Required by law"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Using established sites concentrates human impact rather than spreading it to new areas."
+        },
+        {
+          "id": "env_14",
+          "text": "Why avoid introducing non-native species?",
+          "options": [
+            "They look different",
+            "They can disrupt local ecosystems",
+            "They don't survive well",
+            "They are harder to find"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Non-native species can outcompete native species and disrupt ecological balance."
+        },
+        {
+          "id": "env_15",
+          "text": "How to properly store food in bear country?",
+          "options": [
+            "In your tent for convenience",
+            "In bear-proof containers or hung properly",
+            "Buried near camp",
+            "In your car if nearby"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Proper food storage prevents bear encounters and protects both humans and bears."
+        },
+        {
+          "id": "env_16",
+          "text": "What is the impact of building rock cairns?",
+          "options": [
+            "Helps navigation",
+            "Disturbs natural habitat and landscape",
+            "Makes good photo opportunities",
+            "No impact - rocks are natural"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Building unauthorized cairns disturbs natural rock arrangements and habitats."
+        },
+        {
+          "id": "env_17",
+          "text": "Why use established fire rings?",
+          "options": [
+            "They work better",
+            "Concentrates fire impact in one area",
+            "They are safer",
+            "Required for all fires"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Using existing rings prevents multiple fire scars on the landscape."
+        },
+        {
+          "id": "env_18",
+          "text": "What is 'social trailing' and why is it harmful?",
+          "options": [
+            "Hiking with friends",
+            "Creating new trails by going off established paths",
+            "Walking in single file",
+            "Running on trails"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Social trailing creates unauthorized paths that cause erosion and habitat fragmentation."
+        },
+        {
+          "id": "env_19",
+          "text": "How does proper waste disposal protect wildlife?",
+          "options": [
+            "Makes area look nicer",
+            "Prevents animals from eating harmful materials",
+            "Easier for cleanup crews",
+            "Required by park rules"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Proper waste disposal prevents wildlife from consuming harmful substances and becoming dependent on human food."
+        },
+        {
+          "id": "env_20",
+          "text": "What is the goal of environmental awareness?",
+          "options": [
+            "To make hiking more difficult",
+            "To minimize human impact and preserve natural areas",
+            "To follow rules and avoid fines",
+            "To take better photographs"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The ultimate goal is to ensure natural areas remain pristine for future generations."
+        }
+      ]
+    },
+    "weatherKnowledge": {
+      "name": "Weather Knowledge",
+      "description": "Predicting and responding to weather conditions in the wild",
+      "questions": [
+        {
+          "id": "weather_1",
+          "text": "What is a key indicator of approaching bad weather?",
+          "options": [
+            "A sudden drop in temperature",
+            "Rapidly rising barometric pressure",
+            "Clear skies at night",
+            "Steady wind from the north"
+          ],
+          "correctAnswer": 0,
+          "explanation": "A sudden temperature drop often precedes a cold front and stormy weather."
+        },
+        {
+          "id": "weather_2",
+          "text": "What cloud type is associated with thunderstorms?",
+          "options": [
+            "Cumulonimbus",
+            "Stratus",
+            "Cirrus",
+            "Nimbostratus"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Cumulonimbus clouds are tall, dense, and associated with heavy rain, lightning, and thunderstorms."
+        },
+        {
+          "id": "weather_3",
+          "text": "What does 'red sky at morning' often signify?",
+          "options": [
+            "Good weather all day",
+            "Sailors take warning - bad weather coming",
+            "No change in weather",
+            "Strong winds only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Red sky in morning indicates high moisture and dust, often a sign of an approaching storm system."
+        },
+        {
+          "id": "weather_4",
+          "text": "Where is the safest place during a lightning storm?",
+          "options": [
+            "Under a tall, isolated tree",
+            "Inside a metal-bodied vehicle or substantial building",
+            "In a small shed in a field",
+            "Next to a body of water"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Enclosed metal vehicles and buildings act as a Faraday cage, protecting occupants from lightning."
+        },
+        {
+          "id": "weather_5",
+          "text": "What is hypothermia?",
+          "options": [
+            "Overheating of the body",
+            "A dangerously low body temperature",
+            "A type of sunburn",
+            "Dehydration"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Hypothermia occurs when the body loses heat faster than it can produce it, causing a dangerous drop in core temperature."
+        },
+        {
+          "id": "weather_6",
+          "text": "What weather conditions increase hypothermia risk?",
+          "options": [
+            "Hot and dry",
+            "Cold, wet, and windy",
+            "Warm and humid",
+            "Cool and dry"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The combination of cold temperatures, moisture, and wind dramatically increases heat loss from the body."
+        },
+        {
+          "id": "weather_7",
+          "text": "How can you predict rain using cloud observations?",
+          "options": [
+            "High thin clouds mean immediate rain",
+            "Lowering and thickening clouds often precede rain",
+            "All clouds bring rain",
+            "Cloud color doesn't matter"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Clouds that lower, thicken, and darken typically indicate approaching precipitation."
+        },
+        {
+          "id": "weather_8",
+          "text": "What is the 30-30 rule for lightning safety?",
+          "options": [
+            "30 miles visibility, 30 minutes wait",
+            "30 seconds between flash and bang means 6 miles away, wait 30 minutes after last thunder",
+            "30 people maximum in group, 30 minute hikes",
+            "30 degree temperature, 30% humidity"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Count seconds between lightning and thunder, divide by 5 for miles. Wait 30 minutes after last thunder before resuming activities."
+        },
+        {
+          "id": "weather_9",
+          "text": "What wind direction often brings weather changes?",
+          "options": [
+            "Wind from the east",
+            "Wind shifting from south or west to north or northwest",
+            "Steady north wind",
+            "No wind at all"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Wind shifts often indicate frontal passages and weather changes."
+        },
+        {
+          "id": "weather_10",
+          "text": "How does altitude affect weather conditions?",
+          "options": [
+            "No effect on weather",
+            "Higher altitude means colder temperatures and more exposure",
+            "Weather is always better at higher altitude",
+            "Lower altitude has worse weather"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Temperature drops about 3°F per 1000 feet, and higher elevations are more exposed to wind and storms."
+        },
+        {
+          "id": "weather_11",
+          "text": "What are signs of improving weather?",
+          "options": [
+            "Clouds getting lower and darker",
+            "Clouds breaking up, wind shifting to west or northwest",
+            "Increasing humidity",
+            "Temperature dropping rapidly"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Clearing skies and westerly winds often indicate improving weather conditions."
+        },
+        {
+          "id": "weather_12",
+          "text": "What is frostbite and how to prevent it?",
+          "options": [
+            "Skin damage from heat, prevent with sunscreen",
+            "Freezing of body tissues, prevent with proper clothing and circulation",
+            "Dehydration effect, prevent with water",
+            "Altitude sickness, prevent with acclimatization"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Frostbite is freezing of skin and tissues. Prevent with layered clothing and keeping extremities warm and dry."
+        },
+        {
+          "id": "weather_13",
+          "text": "How does humidity affect temperature perception?",
+          "options": [
+            "No effect on feeling",
+            "High humidity makes cold feel colder and heat feel hotter",
+            "Humidity only affects hot weather",
+            "Low humidity makes all temperatures feel warmer"
+          ],
+          "correctAnswer": 1,
+          "explanation": "High humidity increases heat index in warm weather and wind chill in cold weather."
+        },
+        {
+          "id": "weather_14",
+          "text": "What weather conditions create whiteout situations?",
+          "options": [
+            "Clear skies and bright sun",
+            "Heavy snow, fog, or blowing snow reducing visibility",
+            "Light rain and mist",
+            "High clouds and haze"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Whiteouts occur when snow, fog, or blowing snow drastically reduce visibility and depth perception."
+        },
+        {
+          "id": "weather_15",
+          "text": "How to recognize heat exhaustion symptoms?",
+          "options": [
+            "Shivering and pale skin",
+            "Heavy sweating, weakness, cold pale clammy skin",
+            "Red hot dry skin",
+            "No sweating at all"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Heat exhaustion shows as profuse sweating, weakness, and cool moist skin, unlike heat stroke which has hot dry skin."
+        },
+        {
+          "id": "weather_16",
+          "text": "What is the marine layer effect?",
+          "options": [
+            "Ocean pollution affecting weather",
+            "Cool moist air from ocean creating coastal fog and low clouds",
+            "Warm ocean currents affecting climate",
+            "Salt spray from waves"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Marine layer is cool, moist air from the ocean that creates persistent coastal fog and low clouds."
+        },
+        {
+          "id": "weather_17",
+          "text": "How does barometric pressure relate to weather changes?",
+          "options": [
+            "Rising pressure often means improving weather",
+            "Falling pressure often means deteriorating weather",
+            "Pressure has no relation to weather",
+            "Both A and B are correct"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Rising pressure typically indicates improving weather, while falling pressure often means storms are approaching."
+        },
+        {
+          "id": "weather_18",
+          "text": "What creates valley fog?",
+          "options": [
+            "Pollution from cities",
+            "Cool air draining into valleys condensing moisture",
+            "Geothermal activity",
+            "Forest fires"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Valley fog forms when cool, dense air settles in low areas, causing moisture to condense."
+        },
+        {
+          "id": "weather_19",
+          "text": "How to estimate wind speed without instruments?",
+          "options": [
+            "Guess based on comfort",
+            "Observe vegetation movement and water surface",
+            "Throw grass in air",
+            "Feel with wet finger"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Observing tree movement, grass behavior, and water surface conditions can help estimate wind speed."
+        },
+        {
+          "id": "weather_20",
+          "text": "What is the most dangerous aspect of thunderstorms?",
+          "options": [
+            "Heavy rain only",
+            "Lightning strikes and sudden weather changes",
+            "Loud thunder",
+            "Dark clouds"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Lightning is the most immediate deadly threat, but sudden wind shifts and temperature drops are also dangerous."
+        }
+      ]
+    },
+    "techniqueBasics": {
+      "name": "Technique Basics",
+      "description": "Fundamental outdoor skills and navigation",
+      "questions": [
+        {
+          "id": "tech_1",
+          "text": "What is the most efficient way to pack a backpack?",
+          "options": [
+            "Heavy items at the bottom",
+            "Heavy items close to your back and centered",
+            "Light items at the top only",
+            "Weight evenly distributed left and right, but not concerned with height"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Placing heavy gear in the center and close to your back improves balance and reduces strain."
+        },
+        {
+          "id": "tech_2",
+          "text": "What does the phrase 'orienteering' refer to?",
+          "options": [
+            "A cooking technique",
+            "Navigation using a map and compass",
+            "Setting up a tent",
+            "Identifying animal tracks"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Orienteering is the sport of navigation across unfamiliar terrain using a detailed map and compass."
+        },
+        {
+          "id": "tech_3",
+          "text": "What is the purpose of a tent's rainfly?",
+          "options": [
+            "To provide extra shade",
+            "To block wind and shed rain",
+            "To make the tent more colorful",
+            "To serve as a ground cloth"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The rainfly is a waterproof layer that protects the inner tent from precipitation and wind."
+        },
+        {
+          "id": "tech_4",
+          "text": "When crossing a fast-moving stream, what should you do?",
+          "options": [
+            "Cross at the narrowest point",
+            "Cross at the widest point, which is often the shallowest",
+            "Jump across",
+            "Cross diagonally downstream, facing upstream"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Cross facing upstream for stability, and angle slightly downstream to use the current to your advantage. Unbuckle your pack's waist strap for a quick release if you fall."
+        },
+        {
+          "id": "tech_5",
+          "text": "What is the 'Rule of Threes' for survival priorities?",
+          "options": [
+            "3 minutes without air, 3 hours without shelter, 3 days without water, 3 weeks without food",
+            "3 hours to find food, 3 days to build a fire, 3 weeks to signal for help",
+            "3 minutes to panic, 3 hours to get lost, 3 days to be rescued",
+            "3 layers of clothing, 3 liters of water, 3 sources of fire"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The Rule of Threes helps prioritize survival actions based on the body's most urgent needs."
+        },
+        {
+          "id": "tech_6",
+          "text": "How to properly adjust backpack straps?",
+          "options": [
+            "All straps equally tight",
+            "Hip belt carries 80% weight, shoulder straps stabilize",
+            "Shoulder straps carry most weight",
+            "Only use shoulder straps for comfort"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The hip belt should transfer most weight to your hips, with shoulder straps providing stability and balance."
+        },
+        {
+          "id": "tech_7",
+          "text": "What is the rest step technique for uphill hiking?",
+          "options": [
+            "Running uphill quickly",
+            "Brief pause on straight leg between steps to rest muscles",
+            "Sitting down every few steps",
+            "Walking sideways on steep slopes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The rest step allows muscle recovery between steps, making sustained climbing more efficient."
+        },
+        {
+          "id": "tech_8",
+          "text": "How to choose the best tent site?",
+          "options": [
+            "Any flat spot",
+            "High, flat ground away from hazards, with drainage and wind protection",
+            "Low area for warmth",
+            "Under large trees for cover"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Ideal tent sites are high, flat, well-drained, protected from wind, and away from dead trees or rockfall areas."
+        },
+        {
+          "id": "tech_9",
+          "text": "What is the purpose of a sleeping pad?",
+          "options": [
+            "Only for comfort",
+            "Insulation from ground and comfort",
+            "To keep sleeping bag clean",
+            "As emergency floatation"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Sleeping pads provide crucial insulation from cold ground as well as comfort."
+        },
+        {
+          "id": "tech_10",
+          "text": "How to prevent blisters while hiking?",
+          "options": [
+            "Wear boots without breaking in",
+            "Proper fitting footwear, moisture management, and addressing hot spots early",
+            "Walk barefoot to toughen feet",
+            "Ignore small discomforts"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Blisters are prevented through proper footwear fit, keeping feet dry, and treating hot spots immediately."
+        },
+        {
+          "id": "tech_11",
+          "text": "What is the correct way to use trekking poles?",
+          "options": [
+            "As weapons against animals",
+            "With wrist straps properly fitted, planting pole opposite forward foot",
+            "Holding them like walking sticks",
+            "Only on downhill sections"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Proper pole use involves correct strap adjustment and alternating pole planting with opposite feet for rhythm and balance."
+        },
+        {
+          "id": "tech_12",
+          "text": "How to safely descend steep slopes?",
+          "options": [
+            "Run down quickly",
+            "Keep weight over feet, bend knees, use zigzag pattern if needed",
+            "Slide on seat",
+            "Jump from rock to rock"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Controlled descent with bent knees and centered weight prevents falls and reduces joint impact."
+        },
+        {
+          "id": "tech_13",
+          "text": "What is the importance of pacing in hiking?",
+          "options": [
+            "To finish quickly",
+            "To maintain energy and prevent exhaustion",
+            "To keep with group",
+            "Only for competitive hikers"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Proper pacing conserves energy, prevents overheating, and allows sustainable travel over long distances."
+        },
+        {
+          "id": "tech_14",
+          "text": "How to properly layer clothing for changing conditions?",
+          "options": [
+            "Wear all layers at once",
+            "Base layer manages moisture, insulation retains heat, shell protects elements",
+            "Only wear one thick layer",
+            "Dress for the warmest expected temperature"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The layering system allows adjustment to changing conditions while managing moisture and temperature."
+        },
+        {
+          "id": "tech_15",
+          "text": "What is the purpose of a ground cloth under tents?",
+          "options": [
+            "For decoration",
+            "Protects tent floor from abrasion and moisture",
+            "Makes packing easier",
+            "Required by all campgrounds"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Ground cloths extend tent life by protecting the floor from sharp objects and ground moisture."
+        },
+        {
+          "id": "tech_16",
+          "text": "How to efficiently filter water in the field?",
+          "options": [
+            "Drink directly from streams",
+            "Use proper filter or chemical treatment following manufacturer instructions",
+            "Strain through shirt",
+            "Let sediment settle"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Proper water filtration requires following specific procedures for your chosen method to ensure safety."
+        },
+        {
+          "id": "tech_17",
+          "text": "What is the 'lightning position' for emergency protection?",
+          "options": [
+            "Standing under tall tree",
+            "Crouching on insulation, minimizing ground contact",
+            "Lying flat on ground",
+            "Holding metal objects high"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The lightning crouch minimizes ground contact and creates a smaller target while using insulation from the ground."
+        },
+        {
+          "id": "tech_18",
+          "text": "How to properly secure food from animals?",
+          "options": [
+            "In tent vestibule",
+            "In bear canister or properly hung between trees",
+            "Buried near camp",
+            "In cooking area"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Proper food storage prevents animal encounters and protects both wildlife and your food supply."
+        },
+        {
+          "id": "tech_19",
+          "text": "What is the benefit of hiking in a group?",
+          "options": [
+            "Slower pace",
+            "Safety, shared resources, and navigation assistance",
+            "More noise",
+            "Easier to get lost"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Groups provide safety through numbers, shared equipment, and collective navigation skills."
+        },
+        {
+          "id": "tech_20",
+          "text": "How to maintain energy during long hikes?",
+          "options": [
+            "Large meals at breakfast and dinner",
+            "Frequent small snacks and consistent hydration",
+            "Energy drinks only",
+            "Avoid eating while hiking"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Constant fueling with small, frequent snacks maintains blood sugar and energy levels throughout the day."
+        }
+      ]
+    }
+  }
+}
