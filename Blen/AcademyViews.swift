@@ -418,7 +418,6 @@ struct CourseDetailView: View {
                 .font(.custom("Montserrat-Bold", size: 22))
                 .foregroundColor(.white)
                 .fontWeight(.bold)
-            
             ForEach(course.modules) { module in
                 ModuleView(module: module, course: course)
             }
@@ -432,7 +431,7 @@ struct ModuleView: View {
     let course: Course
     @EnvironmentObject var viewModel: AcademyViewModel
     @State private var isExpanded = false
-    
+    @State private var showHint = false
     var body: some View {
         VStack(alignment: .leading) {
             Button(action: { isExpanded.toggle() }) {
@@ -444,7 +443,7 @@ struct ModuleView: View {
                             .font(.custom("Montserrat-Bold", size: 12))
                             .foregroundColor(.secondary)
                     }
-                    
+                    .contentShape(Rectangle())
                     Spacer()
                     
                     Image(systemName: "chevron.right")
@@ -459,16 +458,35 @@ struct ModuleView: View {
                     ForEach(module.lessons) { lesson in
                         LessonRowView(lesson: lesson, course: course)
                     }
+
+                    HStack(spacing: 6) {
+                        Image(systemName: "hand.tap.fill")
+                            .foregroundColor(.secondary)
+                            .opacity(0.8)
+                            .scaleEffect(1.2)
+                            .animation(.easeInOut(duration: 1).repeatForever(autoreverses: true), value: isExpanded)
+                            .offset(y: -23)
+                        Text("Tap a lesson to open it")
+                            .font(.custom("Montserrat-Bold", size: 12))
+                            .foregroundColor(.secondary)
+                            .offset(y: -23)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .padding(.top, 4)
                 }
                 .padding(.leading)
+                .transition(.opacity.combined(with: .slide))
+                .animation(.easeInOut, value: isExpanded)
             }
         }
+        
         .padding()
         .background(
             Image(.cellImg)
                 .resizable()
-                
+                .scaledToFill()
         )
+        .contentShape(Rectangle())
         .cornerRadius(12)
     }
 }
@@ -521,6 +539,7 @@ struct LessonRowView: View {
         }
         .sheet(isPresented: $showLesson) {
             LessonContentView(lesson: lesson)
+                .presentationDetents([.medium, .large])
         }
     }
 }

@@ -7,23 +7,26 @@ struct LessonContentView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                // Header
-                lessonHeader
-                
-                // Content based on lesson type
-                lessonContent
-                
-                // Completion Button
-                if !viewModel.isLessonCompleted(lesson) {
-                    completionButton
+        ZStack {
+            Color.blue.opacity(0.5)
+            ScrollView {
+                VStack(alignment: .leading, spacing: 20) {
+                    // Header
+                    lessonHeader
+                    
+                    // Content based on lesson type
+                    lessonContent
+                    
+                    // Completion Button
+                    if !viewModel.isLessonCompleted(lesson) {
+                        completionButton
+                    }
                 }
+                .padding()
             }
-            .padding()
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarBackButtonHidden(false)
         }
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationBarBackButtonHidden(false)
     }
     
     private var lessonHeader: some View {
@@ -70,7 +73,14 @@ struct LessonContentView: View {
             }
         }
         .padding()
-        .background(Color(UIColor.secondarySystemBackground))
+//        .background(
+//            Color(UIColor.secondarySystemBackground)
+            .background(
+                Image(.bgCell)
+                    .resizable()
+                    .opacity(0.7)
+            )
+//        )
         .cornerRadius(12)
     }
     
@@ -83,7 +93,12 @@ struct LessonContentView: View {
             AdvancedFormattedContent(text: lesson.content)
         }
         .padding()
-        .background(Color(UIColor.systemBackground))
+//        .background(Color(UIColor.systemBackground))
+        .background(
+            Image(.cell)
+                .resizable()
+                .opacity(0.7)
+        )
         .cornerRadius(12)
         .shadow(color: .black.opacity(0.1), radius: 2, x: 0, y: 1)
     }
