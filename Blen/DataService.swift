@@ -377,7 +377,7 @@ class DataService: ObservableObject {
                 instructor: "Max Forest",
                 rating: 4.9,
                 reviews: 234,
-                price: "Free",
+                Access: "Free",
                 features: ["Completion Certificate", "Interactive Simulations", "Preparation Checklists"], imageName: "survivalArt"
             )
         ]
@@ -437,7 +437,7 @@ class DataService: ObservableObject {
                 instructor: "Captain Orion",
                 rating: 4.8,
                 reviews: 156,
-                price: "$24.99",
+                Access: "Free",
                 features: ["Star Chart Kit", "GPS Simulation", "Advanced Techniques"],
                 imageName: "navigationMastery"
             ),
@@ -472,7 +472,7 @@ class DataService: ObservableObject {
                 instructor: "Dr. Wilderness",
                 rating: 4.9,
                 reviews: 289,
-                price: "$34.99",
+                Access: "Free",
                 features: ["WFR Certification", "Rescue Scenarios", "Medical Kit Planning"], imageName: "wildernessFirstResponders"
             )
         ]
@@ -543,7 +543,7 @@ class DataService: ObservableObject {
                 instructor: "Dr. Greenfield",
                 rating: 4.7,
                 reviews: 178,
-                price: "$22.99",
+                Access: "Free",
                 features: ["Conservation Certification", "Field Projects", "Expert Community"], imageName: "environmentalStewardship"
             ),
             
@@ -577,7 +577,7 @@ class DataService: ObservableObject {
                 instructor: "Storm Chaser Mike",
                 rating: 4.8,
                 reviews: 203,
-                price: "$28.99",
+                Access: "Free",
                 features: ["Storm Tracking", "Weather Instruments", "Safety Protocols"], imageName: "weatherPrediction"
             )
         ]
@@ -648,7 +648,7 @@ class DataService: ObservableObject {
                 instructor: "Sky Master Elena",
                 rating: 4.9,
                 reviews: 167,
-                price: "$39.99",
+                Access: "Free",
                 features: ["Flight Simulator", "Pilot Certification", "Weather Analysis"], imageName: "paraglidingMastery"
             ),
             
@@ -682,7 +682,7 @@ class DataService: ObservableObject {
                 instructor: "Mountain Guide Hans",
                 rating: 4.8,
                 reviews: 198,
-                price: "$32.99",
+                Access: "Free",
                 features: ["Avalanche Certification", "Rescue Training", "Winter Survival"], imageName: "backcountrySkiingExpedition"
             ),
             
@@ -716,7 +716,7 @@ class DataService: ObservableObject {
                 instructor: "River Rescue Sarah",
                 rating: 4.9,
                 reviews: 145,
-                price: "$36.99",
+                Access: "Free",
                 features: ["Rescue Certification", "Scenario Training", "Equipment Mastery"], imageName: "whitewaterRescueTechnician"
             )
         ]

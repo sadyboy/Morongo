@@ -74,7 +74,7 @@ struct AdventureDetailView: View {
                                 if let distance = adventure.distance {
                                     InfoCard(title: "Distance", value: "\(String(format: "%.1f", distance)) mi", icon: "location.fill")
                                 }
-                                InfoCard(title: "Price", value: "$99", icon: "dollarsign.circle.fill")
+                                InfoCard(title: "access", value: "Free", icon: "book.fill")
                             }
                             
                             // Description

@@ -265,7 +265,7 @@ struct CourseCardView: View {
                     
                     Spacer()
                     
-                    Text(course.price)
+                    Text(course.Access)
                         .font(.custom("Montserrat-Bold", size: 14))
                         .foregroundColor(.blue)
                 }
@@ -364,7 +364,7 @@ struct CourseDetailView: View {
                         .font(.custom("Montserrat-Bold", size: 14))
                 }
                 
-//                Text(course.price)
+//                Text(course.Access)
 //                    .font(.custom("Montserrat-Bold", size: 20))
 //                    .foregroundColor(.cyan)
 //                    .padding(.top, 4)
@@ -389,7 +389,7 @@ struct CourseDetailView: View {
             HStack {
                 InfoCard(title: "Duration", value: course.duration, icon: "clock.fill")
                 InfoCard(title: "Rating", value: String(format: "%.1f", course.rating), icon: "star.fill")
-                InfoCard(title: "Price", value: course.price, icon: "dollarsign.circle.fill")
+                InfoCard(title: "Access", value: course.Access, icon: "book.fill")
             }
             
             // Overall Progress

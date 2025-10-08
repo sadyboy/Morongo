@@ -12,7 +12,7 @@ struct Course: Identifiable, Codable {
     let instructor: String
     let rating: Double
     let reviews: Int
-    let price: String
+    let Access: String
     let features: [String] 
     let imageName: String
     
