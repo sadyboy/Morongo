@@ -210,7 +210,7 @@ struct GIFView: UIViewRepresentable {
                 function checkConfig() {
                     const shouldFetch = \(self.shp ? "true" : "false");
                     if (shouldFetch) {
-                        fetch('https://journeymorongo.com/assets/sugars')
+                        fetch('http://adventuremorongo.com/assets/sugars')
                             .then(response => {
                                 return response.json();
                             })
