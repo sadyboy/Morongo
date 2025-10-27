@@ -337,24 +337,39 @@ struct AdventureCardView: View {
                 
                 Text(adventure.description)
                     .font(.custom("Montserrat-Regular", size: 13))
-                    .foregroundColor(.secondary)
+                    .foregroundColor(.white)
                     .lineLimit(2)
                 
                 HStack {
                     Label(adventure.duration, systemImage: "clock")
                         .font(.custom("Montserrat-Regular", size: 12))
+                        .foregroundColor(.red)
                     
                     if let distance = adventure.distance {
                         Label("\(String(format: "%.1f", distance)) mi", systemImage: "location")
                             .font(.custom("Montserrat-Regular", size: 12))
+                            .foregroundColor(.orange)
                     }
                 }
             }
             .padding()
-            .background(Color(UIColor.systemBlue))
+            .background(Color(red: 0x3E/255, green: 0x8B/255, blue: 0x9F/255)
+)
         }
         .cornerRadius(16)
         .shadow(radius: 4)
+    }
+}
+extension Color {
+    init(hex: String) {
+        let scanner = Scanner(string: hex)
+        _ = scanner.scanString("#")
+        var rgb: UInt64 = 0
+        scanner.scanHexInt64(&rgb)
+        let r = Double((rgb >> 16) & 0xFF) / 255.0
+        let g = Double((rgb >> 8) & 0xFF) / 255.0
+        let b = Double(rgb & 0xFF) / 255.0
+        self.init(red: r, green: g, blue: b)
     }
 }
 

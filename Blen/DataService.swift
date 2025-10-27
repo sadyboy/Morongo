@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 
 class DataService: ObservableObject {
     static let shared = DataService()
@@ -192,7 +193,8 @@ class DataService: ObservableObject {
         userProgress.level = userProgress.totalPoints / 100 + 1
     }
     
-   static func loadAdventures() -> [Adventure] {
+    // MARK: - Adventures
+    static func loadAdventures() -> [Adventure] {
         return [
             Adventure(
                 id: UUID(),
@@ -328,6 +330,8 @@ class DataService: ObservableObject {
             )
         ]
     }
+    
+    // MARK: - Courses
     private static func loadCourses() -> [Course] {
         var courses: [Course] = []
         
@@ -343,8 +347,18 @@ class DataService: ObservableObject {
         // Part 4: Sports Courses (Air, Skiing, Water)
         courses.append(contentsOf: loadSportsCourses())
         
+        // Part 5: New Specialized Courses
+        courses.append(contentsOf: loadSpecializedCourses())
+        
+        // Part 6: Photography & Documentation Courses
+        courses.append(contentsOf: loadPhotographyCourses())
+        
         return courses
     }
+    
+    // MARK: - Course Content Methods
+    
+    // Safety Courses
     private static func loadSafetyCourses() -> [Course] {
         return [
             Course(
@@ -368,6 +382,50 @@ class DataService: ObservableObject {
                                 duration: 900,
                                 content: survivalPsychologyContent(),
                                 isCompleted: false
+                            ),
+                            Course.Lesson(
+                                id: UUID(),
+                                title: "Emergency Shelter Building",
+                                description: "Quick shelter construction techniques",
+                                type: .video,
+                                duration: 720,
+                                content: "shelter_building_video",
+                                isCompleted: false
+                            ),
+                            Course.Lesson(
+                                id: UUID(),
+                                title: "Fire Starting Mastery",
+                                description: "Multiple fire starting methods in all conditions",
+                                type: .interactive,
+                                duration: 600,
+                                content: fireStartingContent(),
+                                isCompleted: false
+                            )
+                        ],
+                        isCompleted: false
+                    ),
+                    Course.Module(
+                        id: UUID(),
+                        title: "Advanced Survival Techniques",
+                        description: "Professional survival skills for extended stays",
+                        lessons: [
+                            Course.Lesson(
+                                id: UUID(),
+                                title: "Water Purification Methods",
+                                description: "Making water safe to drink in wilderness",
+                                type: .text,
+                                duration: 800,
+                                content: waterPurificationContent(),
+                                isCompleted: false
+                            ),
+                            Course.Lesson(
+                                id: UUID(),
+                                title: "Emergency Signaling",
+                                description: "How to signal for rescue effectively",
+                                type: .interactive,
+                                duration: 450,
+                                content: signalingContent(),
+                                isCompleted: false
                             )
                         ],
                         isCompleted: false
@@ -378,33 +436,57 @@ class DataService: ObservableObject {
                 rating: 4.9,
                 reviews: 234,
                 Access: "Free",
-                features: ["Completion Certificate", "Interactive Simulations", "Preparation Checklists"], imageName: "survivalArt"
+                features: ["Completion Certificate", "Interactive Simulations", "Preparation Checklists"],
+                imageName: "survivalArt"
+            ),
+            
+            Course(
+                id: UUID(),
+                title: "Urban Survival Preparedness",
+                description: "Essential skills for surviving emergencies in urban environments and natural disasters.",
+                category: .hiking,
+                difficulty: .beginner,
+                duration: "3 weeks",
+                modules: [
+                    Course.Module(
+                        id: UUID(),
+                        title: "Urban Emergency Protocols",
+                        description: "Survival strategies for city environments",
+                        lessons: [
+                            Course.Lesson(
+                                id: UUID(),
+                                title: "Emergency Evacuation Planning",
+                                description: "Creating effective evacuation plans",
+                                type: .text,
+                                duration: 680,
+                                content: evacuationPlanningContent(),
+                                isCompleted: false
+                            ),
+                            Course.Lesson(
+                                id: UUID(),
+                                title: "Urban Water Sources",
+                                description: "Finding and purifying water in cities",
+                                type: .interactive,
+                                duration: 550,
+                                content: urbanWaterContent(),
+                                isCompleted: false
+                            )
+                        ],
+                        isCompleted: false
+                    )
+                ],
+                imageURL: "urban_survival_cover",
+                instructor: "Alex Crisis",
+                rating: 4.7,
+                reviews: 189,
+                Access: "Free",
+                features: ["Emergency Checklists", "Urban Survival Kit", "Evacuation Plans"],
+                imageName: "urbanSurvival"
             )
         ]
     }
-
-    private static func survivalPsychologyContent() -> String {
-        return """
-        # Survival Psychology Rules
-        
-        ## 1. Stay Calm Principle
-        - Stop and breathe deeply before making decisions
-        - Assess the situation objectively
-        - Avoid panic-driven actions
-        
-        ## 2. Positive Mindset Rules
-        - Focus on solutions, not problems
-        - Set small achievable goals
-        - Maintain hope and determination
-        
-        ## 3. Decision Making Protocol
-        - Gather all available information
-        - Consider consequences of each action
-        - Choose the safest option first
-        """
-    }
-
-    // MARK: - Part 2: Navigation and First Aid Courses
+    
+    // Navigation & First Aid Courses
     private static func loadNavigationFirstAidCourses() -> [Course] {
         return [
             Course(
@@ -427,6 +509,15 @@ class DataService: ObservableObject {
                                 type: .text,
                                 duration: 880,
                                 content: starNavigationContent(),
+                                isCompleted: false
+                            ),
+                            Course.Lesson(
+                                id: UUID(),
+                                title: "Solar Navigation Techniques",
+                                description: "Using sun position for navigation",
+                                type: .interactive,
+                                duration: 720,
+                                content: solarNavigationContent(),
                                 isCompleted: false
                             )
                         ],
@@ -473,44 +564,13 @@ class DataService: ObservableObject {
                 rating: 4.9,
                 reviews: 289,
                 Access: "Free",
-                features: ["WFR Certification", "Rescue Scenarios", "Medical Kit Planning"], imageName: "wildernessFirstResponders"
+                features: ["WFR Certification", "Rescue Scenarios", "Medical Kit Planning"],
+                imageName: "wildernessFirstResponders"
             )
         ]
     }
-
-    private static func starNavigationContent() -> String {
-        return """
-        # Star Navigation Principles
-        
-        ## 1. Polaris (North Star) Navigation
-        - Locate Polaris using Big Dipper pointer stars
-        - Polaris indicates true north direction
-        - Accuracy within 1 degree of true north
-        
-        ## 2. Southern Cross Navigation
-        - Crux constellation for southern hemisphere
-        - Extend the long axis 4.5 times for south direction
-        - Use with Pointers for verification
-        """
-    }
-
-    private static func extendedCareContent() -> String {
-        return """
-        # Extended Wilderness Care Protocols
-        
-        ## 1. Patient Monitoring System
-        - Vital signs tracking every 15 minutes
-        - Neurological assessment checks
-        - Hydration and nutrition management
-        
-        ## 2. Environmental Protection
-        - Hypothermia prevention protocols
-        - Shelter improvisation techniques
-        - Weather protection strategies
-        """
-    }
-
-    // MARK: - Part 3: Environment and Weather Courses
+    
+    // Environment & Weather Courses
     private static func loadEnvironmentWeatherCourses() -> [Course] {
         return [
             Course(
@@ -544,7 +604,8 @@ class DataService: ObservableObject {
                 rating: 4.7,
                 reviews: 178,
                 Access: "Free",
-                features: ["Conservation Certification", "Field Projects", "Expert Community"], imageName: "environmentalStewardship"
+                features: ["Conservation Certification", "Field Projects", "Expert Community"],
+                imageName: "environmentalStewardship"
             ),
             
             Course(
@@ -578,44 +639,13 @@ class DataService: ObservableObject {
                 rating: 4.8,
                 reviews: 203,
                 Access: "Free",
-                features: ["Storm Tracking", "Weather Instruments", "Safety Protocols"], imageName: "weatherPrediction"
+                features: ["Storm Tracking", "Weather Instruments", "Safety Protocols"],
+                imageName: "weatherPrediction"
             )
         ]
     }
-
-    private static func conservationContent() -> String {
-        return """
-        # Advanced Conservation Principles
-        
-        ## 1. Habitat Restoration
-        - Native species reintroduction
-        - Erosion control techniques
-        - Water source protection
-        
-        ## 2. Wildlife Corridor Management
-        - Migration route preservation
-        - Human-wildlife conflict reduction
-        - Habitat connectivity planning
-        """
-    }
-
-    private static func weatherAnalysisContent() -> String {
-        return """
-        # Severe Weather Analysis
-        
-        ## 1. Thunderstorm Development
-        - Cumulus stage identification
-        - Mature stage characteristics
-        - Dissipating stage recognition
-        
-        ## 2. Tornado Prediction Signs
-        - Wall cloud formation
-        - Funnel cloud development
-        - Environmental precursors
-        """
-    }
-
-    // MARK: - Part 4: Sports Courses
+    
+    // Sports Courses
     private static func loadSportsCourses() -> [Course] {
         return [
             Course(
@@ -649,7 +679,8 @@ class DataService: ObservableObject {
                 rating: 4.9,
                 reviews: 167,
                 Access: "Free",
-                features: ["Flight Simulator", "Pilot Certification", "Weather Analysis"], imageName: "paraglidingMastery"
+                features: ["Flight Simulator", "Pilot Certification", "Weather Analysis"],
+                imageName: "paraglidingMastery"
             ),
             
             Course(
@@ -683,45 +714,288 @@ class DataService: ObservableObject {
                 rating: 4.8,
                 reviews: 198,
                 Access: "Free",
-                features: ["Avalanche Certification", "Rescue Training", "Winter Survival"], imageName: "backcountrySkiingExpedition"
-            ),
-            
+                features: ["Avalanche Certification", "Rescue Training", "Winter Survival"],
+                imageName: "backcountrySkiingExpedition"
+            )
+        ]
+    }
+    
+    // Specialized Courses
+    private static func loadSpecializedCourses() -> [Course] {
+        return [
             Course(
                 id: UUID(),
-                title: "Whitewater Rescue Technician",
-                description: "Professional rescue techniques for river guides and advanced paddlers.",
-                category: .water,
-                difficulty: .expert,
+                title: "Rock Climbing Technique Mastery",
+                description: "Advanced climbing techniques, movement efficiency, and mental training for serious climbers.",
+                category: .climbing,
+                difficulty: .intermediate,
                 duration: "6 weeks",
                 modules: [
                     Course.Module(
                         id: UUID(),
-                        title: "Swiftwater Rescue",
-                        description: "Advanced techniques for fast-moving water",
+                        title: "Advanced Movement Techniques",
+                        description: "Master efficient climbing movement",
                         lessons: [
                             Course.Lesson(
                                 id: UUID(),
-                                title: "Professional Rescue Standards",
-                                description: "Industry-standard swiftwater protocols",
+                                title: "Dynamic Movement Principles",
+                                description: "Mastering dynamic climbing techniques",
                                 type: .text,
-                                duration: 1250,
-                                content: swiftwaterRescueContent(),
+                                duration: 850,
+                                content: dynamicMovementContent(),
                                 isCompleted: false
                             )
                         ],
                         isCompleted: false
                     )
                 ],
-                imageURL: "water_rescue_course_cover",
-                instructor: "River Rescue Sarah",
-                rating: 4.9,
-                reviews: 145,
+                imageURL: "climbing_technique_cover",
+                instructor: "Vertical Master Leo",
+                rating: 4.8,
+                reviews: 223,
                 Access: "Free",
-                features: ["Rescue Certification", "Scenario Training", "Equipment Mastery"], imageName: "whitewaterRescueTechnician"
+                features: ["Technique Analysis", "Training Plans", "Movement Drills"],
+                imageName: "climbingMastery"
             )
         ]
     }
-
+    
+    // Photography Courses
+    private static func loadPhotographyCourses() -> [Course] {
+        return [
+            Course(
+                id: UUID(),
+                title: "Adventure Photography",
+                description: "Capture stunning outdoor images. Master composition, lighting, and storytelling in adventure photography.",
+                category: .hiking,
+                difficulty: .beginner,
+                duration: "4 weeks",
+                modules: [
+                    Course.Module(
+                        id: UUID(),
+                        title: "Outdoor Photography Fundamentals",
+                        description: "Essential techniques for outdoor photography",
+                        lessons: [
+                            Course.Lesson(
+                                id: UUID(),
+                                title: "Natural Light Mastery",
+                                description: "Using natural light in outdoor photography",
+                                type: .text,
+                                duration: 750,
+                                content: naturalLightContent(),
+                                isCompleted: false
+                            )
+                        ],
+                        isCompleted: false
+                    )
+                ],
+                imageURL: "photography_course_cover",
+                instructor: "Lens Master Sarah",
+                rating: 4.9,
+                reviews: 278,
+                Access: "Free",
+                features: ["Photo Assignments", "Editing Techniques", "Portfolio Building"],
+                imageName: "adventurePhotography"
+            )
+        ]
+    }
+    
+    // MARK: - Content Methods
+    
+    private static func survivalPsychologyContent() -> String {
+        return """
+        # Survival Psychology Rules
+        
+        ## 1. Stay Calm Principle
+        - Stop and breathe deeply before making decisions
+        - Assess the situation objectively
+        - Avoid panic-driven actions
+        
+        ## 2. Positive Mindset Rules
+        - Focus on solutions, not problems
+        - Set small achievable goals
+        - Maintain hope and determination
+        
+        ## 3. Decision Making Protocol
+        - Gather all available information
+        - Consider consequences of each action
+        - Choose the safest option first
+        """
+    }
+    
+    private static func fireStartingContent() -> String {
+        return """
+        # Fire Starting Mastery
+        
+        ## 1. Primitive Methods
+        - **Bow Drill Technique**: Create fire using friction
+        - **Hand Drill**: Simpler but more physically demanding
+        - **Fire Plow**: Effective in certain wood types
+        
+        ## 2. Modern Tools
+        - **Ferrocerium Rods**: Reliable in all conditions
+        - **Waterproof Matches**: Essential for wet environments
+        - **Lighters**: Most convenient but can fail
+        
+        ## 3. Fire Structure
+        - **Teepee**: Fast ignition, good for cooking
+        - **Log Cabin**: Long-lasting, stable
+        - **Lean-to**: Wind-resistant design
+        """
+    }
+    
+    private static func waterPurificationContent() -> String {
+        return """
+        # Water Purification Methods
+        
+        ## 1. Boiling
+        - Most reliable method
+        - Boil for 1 minute (3 minutes at high altitude)
+        - Kills all pathogens
+        
+        ## 2. Filtration
+        - **Portable Filters**: Remove bacteria and protozoa
+        - **DIY Filters**: Using sand, charcoal, and cloth
+        - **Microbiological Safety**: Check filter ratings
+        
+        ## 3. Chemical Treatment
+        - **Iodine Tablets**: Effective but alters taste
+        - **Chlorine Dioxide**: Better taste, broader protection
+        - **Wait Times**: Follow manufacturer instructions
+        """
+    }
+    
+    private static func signalingContent() -> String {
+        return """
+        # Emergency Signaling Methods
+        
+        ## 1. Visual Signals
+        - **Signal Mirror**: Most effective daytime signal
+        - **Smoke Signals**: Green vegetation for white smoke
+        - **Ground Signals**: Create large symbols visible from air
+        
+        ## 2. Auditory Signals
+        - **Whistle**: Carry a survival whistle
+        - **Gunshots**: Three shots in rapid succession
+        - **Voice**: Yell in groups of three
+        
+        ## 3. Electronic Signals
+        - **PLB/EPIRB**: Satellite emergency beacons
+        - **Cell Phone**: Emergency calls when service available
+        """
+    }
+    
+    private static func evacuationPlanningContent() -> String {
+        return """
+        # Emergency Evacuation Planning
+        
+        ## 1. Risk Assessment
+        - **Identify Threats**: Natural disasters in your area
+        - **Vulnerability Analysis**: Home and workplace risks
+        - **Escape Routes**: Primary and secondary paths
+        
+        ## 2. Communication Plan
+        - **Family Contacts**: Designated out-of-area contact
+        - **Meeting Points**: Primary and secondary locations
+        - **Emergency Alerts**: Sign up for local warning systems
+        """
+    }
+    
+    private static func urbanWaterContent() -> String {
+        return """
+        # Urban Water Sources & Purification
+        
+        ## 1. Emergency Water Sources
+        - **Water Heaters**: 40-80 gallons of clean water
+        - **Toilet Tanks**: Not bowls, only clean tank water
+        - **Canned Goods**: Liquid in canned vegetables/fruits
+        
+        ## 2. Collection Methods
+        - **Rainwater**: Clean collection from roofs
+        - **Swimming Pools**: For non-drinking uses initially
+        - **Water Mains**: Know how to shut off and drain
+        """
+    }
+    
+    private static func starNavigationContent() -> String {
+        return """
+        # Star Navigation Principles
+        
+        ## 1. Polaris (North Star) Navigation
+        - Locate Polaris using Big Dipper pointer stars
+        - Polaris indicates true north direction
+        - Accuracy within 1 degree of true north
+        
+        ## 2. Southern Cross Navigation
+        - Crux constellation for southern hemisphere
+        - Extend the long axis 4.5 times for south direction
+        - Use with Pointers for verification
+        """
+    }
+    
+    private static func solarNavigationContent() -> String {
+        return """
+        # Solar Navigation Techniques
+        
+        ## 1. Shadow Stick Method
+        - Place stick vertically in ground
+        - Mark shadow tip every 15 minutes
+        - Line through marks shows east-west direction
+        
+        ## 2. Watch Method
+        - **Northern Hemisphere**: Point hour hand at sun
+        - **Southern Hemisphere**: Point 12 at sun
+        """
+    }
+    
+    private static func extendedCareContent() -> String {
+        return """
+        # Extended Wilderness Care Protocols
+        
+        ## 1. Patient Monitoring System
+        - Vital signs tracking every 15 minutes
+        - Neurological assessment checks
+        - Hydration and nutrition management
+        
+        ## 2. Environmental Protection
+        - Hypothermia prevention protocols
+        - Shelter improvisation techniques
+        - Weather protection strategies
+        """
+    }
+    
+    private static func conservationContent() -> String {
+        return """
+        # Advanced Conservation Principles
+        
+        ## 1. Habitat Restoration
+        - Native species reintroduction
+        - Erosion control techniques
+        - Water source protection
+        
+        ## 2. Wildlife Corridor Management
+        - Migration route preservation
+        - Human-wildlife conflict reduction
+        - Habitat connectivity planning
+        """
+    }
+    
+    private static func weatherAnalysisContent() -> String {
+        return """
+        # Severe Weather Analysis
+        
+        ## 1. Thunderstorm Development
+        - Cumulus stage identification
+        - Mature stage characteristics
+        - Dissipating stage recognition
+        
+        ## 2. Tornado Prediction Signs
+        - Wall cloud formation
+        - Funnel cloud development
+        - Environmental precursors
+        """
+    }
+    
     private static func thermalFlyingContent() -> String {
         return """
         # Thermal Flying Mastery
@@ -737,7 +1011,7 @@ class DataService: ObservableObject {
         - Weight shift coordination
         """
     }
-
+    
     private static func avalancheRescueContent() -> String {
         return """
         # Avalanche Rescue Protocol
@@ -753,23 +1027,40 @@ class DataService: ObservableObject {
         - Team coordination protocols
         """
     }
-
-    private static func swiftwaterRescueContent() -> String {
+    
+    private static func dynamicMovementContent() -> String {
         return """
-        # Professional Rescue Standards
+        # Dynamic Movement Principles
         
-        ## 1. Throw Bag Mastery
-        - Accurate throwing techniques
-        - Line management protocols
-        - Belay systems for rescuers
+        ## 1. Momentum Utilization
+        - **Deadpoint Moves**: Precise momentum control
+        - **Dynamic Lunges**: Reaching distant holds
+        - **Pogo Moves**: Using leg power for upward motion
         
-        ## 2. Strainer Rescue
-        - Hazard recognition
-        - Victim approach strategies
-        - Extraction techniques
+        ## 2. Body Positioning
+        - **Center of Gravity**: Optimal positioning
+        - **Flagging**: Balance and stability
+        - **Backstepping**: Hip engagement for reach
         """
     }
     
+    private static func naturalLightContent() -> String {
+        return """
+        # Natural Light Mastery
+        
+        ## 1. Golden Hour Photography
+        - **Morning Light**: Soft, warm tones
+        - **Evening Light**: Dramatic, long shadows
+        - **Positioning**: Sun at your back for beginners
+        
+        ## 2. Midday Challenges
+        - **Harsh Light**: Use shadows creatively
+        - **Overcast Advantage**: Natural softbox effect
+        - **Reflectors**: Bouncing light into shadows
+        """
+    }
+    
+    // MARK: - Quizzes
     private static func loadQuizzes() -> [Quiz] {
         var quizzes: [Quiz] = []
         
@@ -778,7 +1069,7 @@ class DataService: ObservableObject {
                 let quiz = QuizDataService.shared.generateQuiz(
                     category: category,
                     difficulty: difficulty,
-                    questionCount: 10 
+                    questionCount: 10
                 )
                 quizzes.append(quiz)
             }
@@ -802,6 +1093,57 @@ class DataService: ObservableObject {
     private func saveQuizzes() {
         if let data = try? JSONEncoder().encode(quizzes) {
             UserDefaults.standard.set(data, forKey: quizzesKey)
+        }
+    }
+}
+
+// MARK: - Course Extensions
+extension Course {
+    var progressPercentage: Double {
+        let totalLessons = modules.flatMap { $0.lessons }.count
+        guard totalLessons > 0 else { return 0 }
+        let completedLessons = modules.flatMap { $0.lessons }.filter { $0.isCompleted }.count
+        return Double(completedLessons) / Double(totalLessons) * 100
+    }
+    
+    var totalDuration: TimeInterval {
+        return TimeInterval(modules.flatMap { $0.lessons }.reduce(0) { $0 + $1.duration })
+    }
+    
+    var formattedTotalDuration: String {
+        let hours = Int(totalDuration) / 3600
+        let minutes = Int(totalDuration) / 60 % 60
+        return "\(hours)h \(minutes)m"
+    }
+}
+
+// MARK: - Interactive Lesson Types
+extension Course {
+    enum LessonType: String, Codable {
+        case text = "text"
+        case video = "video"
+        case interactive = "interactive"
+        case quiz = "quiz"
+        case practical = "practical"
+        
+        var icon: String {
+            switch self {
+            case .text: return "doc.text"
+            case .video: return "play.rectangle"
+            case .interactive: return "hand.tap"
+            case .quiz: return "questionmark.circle"
+            case .practical: return "figure.walk"
+            }
+        }
+        
+        var color: String {
+            switch self {
+            case .text: return "blue"
+            case .video: return "red"
+            case .interactive: return "green"
+            case .quiz: return "orange"
+            case .practical: return "purple"
+            }
         }
     }
 }

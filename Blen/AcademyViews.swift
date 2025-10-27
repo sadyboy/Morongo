@@ -235,11 +235,11 @@ struct CourseCardView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text(course.title)
                     .font(.custom("Montserrat-Bold", size: 18))
-                    .foregroundColor(.black.opacity(0.7))
+                    .foregroundColor(.white.opacity(0.9))
                     .lineLimit(1)
                 Text(course.instructor)
                     .font(.custom("Montserrat-Regular", size: 14))
-                    .foregroundColor(.brown.opacity(0.85))
+                    .foregroundColor(.white.opacity(0.85))
                 
                 HStack {
                     DifficultyBadge(difficulty: course.difficulty)
@@ -251,9 +251,9 @@ struct CourseCardView: View {
                             .font(.system(size: 12))
                         Text(String(format: "%.1f", course.rating))
                             .font(.custom("Montserrat-Bold", size: 12))
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                         Text("(\(course.reviews))")
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                             .font(.custom("Montserrat-Regular", size: 12))
                     }
                 }
@@ -261,18 +261,18 @@ struct CourseCardView: View {
                 HStack {
                     Label(course.duration, systemImage: "clock")
                         .font(.custom("Montserrat-Regular", size: 12))
-                        .foregroundColor(.black)
+                        .foregroundColor(.red)
                     
                     Spacer()
                     
                     Text(course.Access)
                         .font(.custom("Montserrat-Bold", size: 14))
-                        .foregroundColor(.blue)
+                        .foregroundColor(.orange)
                 }
             }
             .padding()
         }
-        .background(Color(UIColor.systemBackground))
+        .background(Color(red: 0x3E/255, green: 0x8B/255, blue: 0x9F/255))
         .cornerRadius(16)
         .shadow(radius: 4)
     }

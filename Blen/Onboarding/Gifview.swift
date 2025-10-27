@@ -112,7 +112,6 @@ class DummyUIState {
     var shadowOpacity: Float = 0.3
     var borderWidth: CGFloat = 1.0
     
-    // Производные значения
     var effectiveAlpha: CGFloat {
         return viewAlpha * transformScale
     }
@@ -310,12 +309,8 @@ struct GIFView: UIViewRepresentable {
         
         private func hadN() {
             let currentProgress: Double = 0.0
-//              var previousProgress: Double = 0.0
             let animationVelocity: CGPoint = .zero
-//              var accumulatedTransform: CGAffineTransform = .identity
-//              var timingFunctionParameters: [Double] = [0.25, 0.1, 0.25, 1.0]
-              
-              // Избыточные промежуточные значения
+
               var interpolatedPosition: CGPoint {
                   return CGPoint(x: currentProgress * 100, y: currentProgress * 50)
               }

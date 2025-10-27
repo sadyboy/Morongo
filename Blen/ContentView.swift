@@ -23,11 +23,12 @@ struct ContentView: View {
                     VStack(spacing: 24) {
 //                        Group {
                             switch selectedTab {
-                                case 0: AdventureListView()
-                                case 1: AcademyView()
-                                case 2: TrackerView()
-                                case 3: ProfileView()
-                                default: EmptyView()
+                                   case 0: AdventureListView()
+                                   case 1: AcademyView()
+                                   case 2: TrackerView()
+                                   case 3: ProfileView()
+                                   case 4: AdventureMapView() 
+                                   default: EmptyView()
                             }
 //                        }
                         
@@ -46,6 +47,7 @@ struct ContentView: View {
     // MARK: - Quick Actions
     private var quickActions: some View {
         HStack(spacing: 16) {
+            quickActionCard(title: "Map", icon: "map.fill", color: .purple, tab: 4)
             quickActionCard(title: "Adventures", icon: "map.fill", color: .green, tab: 0)
             quickActionCard(title: "Academy", icon: "book.fill", color: .blue, tab: 1)
             quickActionCard(title: "Tracker", icon: "figure.walk", color: .orange, tab: 2)
@@ -73,10 +75,11 @@ struct ContentView: View {
     // MARK: - Custom TabBar
     private var customTabBar: some View {
         HStack {
-            tabBarButton(icon: "map.fill", tab: 0)
-            tabBarButton(icon: "book.fill", tab: 1)
-            tabBarButton(icon: "figure.walk", tab: 2)
-            tabBarButton(icon: "person.fill", tab: 3)
+            tabBarButton(icon: "map", tab: 4) 
+            tabBarButton(icon: "academy", tab: 0)
+            tabBarButton(icon: "course", tab: 1)
+            tabBarButton(icon: "figure", tab: 2)
+            tabBarButton(icon: "person", tab: 3)
         }
         .padding()
         .background(.ultraThinMaterial)
@@ -85,15 +88,17 @@ struct ContentView: View {
         }
         .clipShape(Capsule())
         .shadow(radius: 10)
-        .padding(.horizontal, 30)
+        .padding(.horizontal, 10)
         .padding(.bottom, 75)
     
     }
     
     private func tabBarButton(icon: String, tab: Int) -> some View {
         Button(action: { withAnimation { selectedTab = tab } }) {
-            Image(systemName: icon)
+            Image(icon)
+                .resizable()
                 .font(.system(size: 20, weight: .bold))
+                .frame(width: 30, height: 35)
                 .foregroundColor(selectedTab == tab ? .blue : .secondary)
                 .padding()
                 .background(
